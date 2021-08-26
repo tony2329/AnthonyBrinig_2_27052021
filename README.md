@@ -1,6 +1,6 @@
 <h2>Reservia</h2>
 
-**Voir le projet en live:** [CLICK HERE](https://tony2329.github.io/AnthonyBrinig_2_26052021/).<br><br>
+**Voir le projet en live:** [CLICK HERE](https://tony2329.github.io/AnthonyBrinig_2_27052021/).<br><br>
 
 Reservia est une petite entreprise qui propose un outil de planification de vacances.
 Ce site permet aux différents usagers de trouver des hébergements et activités dans la ville de leur choix.
