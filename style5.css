@@ -1,0 +1,1358 @@
+/* police ajouté au site */
+@font-face {
+  font-family: "raleway";
+  src: url(raleway/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "ralewaybold";
+  src: url(raleway/Raleway-Bold.ttf);
+}
+/* police de la page */
+#bloc_page {
+  font-family: "raleway";
+}
+
+/* evite que les marge et padding prenne plus de place */
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ligne en dessous du lien enlevé */
+a {
+  text-decoration: none;
+}
+
+/* MENU */
+
+/* mise en place du menu en haut a droite */
+
+#logo_principal {
+  position: absolute;
+  height: 50px;
+  margin: 25px 20px;
+}
+
+nav,
+#menu_marge {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-top: 0px;
+}
+
+#menu_marge li {
+  padding: 40px 24px 10px 24px;
+  list-style-type: none;
+  font-size: 14px;
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+a:visited {
+  color: inherit;
+}
+
+#menu_marge li:hover {
+  border-top: 2px #0065fc solid;
+  color: #0065fc;
+}
+
+.inscrire:hover {
+  border-top: 2px #0065fc solid;
+  color: #0065fc;
+}
+
+nav .inscrire {
+  color: #0065fc;
+  font-size: 18px;
+  font-family: "ralewaybold";
+  padding: 40px 24px 10px 24px;
+}
+
+/* TITRE */
+
+/* titre h1 de la page */
+#titreh1 {
+  font-family: "ralewaybold";
+  font-size: 1.3em;
+  font-weight: bold;
+  color: black;
+  margin: 20px;
+}
+/* titre 2 du header */
+#presentation {
+  font-size: 1em;
+  margin: 20px;
+}
+
+/* BARRE DE RECHERCHE */
+
+/* la barre de recherche */
+#recherche {
+  display: flex;
+  justify-content: left;
+  margin: 20px;
+}
+/* le logo de map */
+#logodestination {
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 27px;
+}
+/* la barre de recherche client */
+#destination {
+  padding: 13px;
+  border: 0.5px solid #f2f2f2;
+  color: black;
+  font-weight: bold;
+}
+/* partie extérieur du bouton de recherche */
+.bouton {
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  background-color: #0065fc;
+}
+/* le bouton cliquable de recherche (partie intérieur) */
+.bou {
+  color: white;
+  background-color: #0065fc;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* mise en place du logo loupe */
+.fa-search {
+  color: white;
+  align-items: center;
+}
+
+/* masquer le logo loupe sur ordinateur */
+form button i,
+form button i::before,
+form button i::after {
+  display: none;
+}
+
+/* FILTRES */
+
+/* placement de la barre de filtre */
+.texte_centre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* alignement de la barre de filtre */
+.filtre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: max-content;
+  min-height: 10vh;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+/* placement du titre filtre */
+.filtreh2 {
+  margin-right: 20px;
+  font-family: "ralewaybold";
+  font-size: 1em;
+  margin: 20px;
+}
+
+/* placement de bordure des différents filtres */
+.filtre .filtre_texte {
+  border: 2px solid #f2f2f2;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* passage au survole de la souris */
+.filtre_texte:hover > .couleur_texte {
+  color: #0065fc;
+}
+
+.filtre_texte:hover > .logo_icon {
+  color: white;
+  background-color: #0065fc;
+}
+
+/* placement du texte centrage */
+.couleur_texte {
+  height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 0 25px 25px 0;
+  color: black;
+  font-family: "ralewaybold";
+}
+
+/* placement des icone et centrage */
+.logo_icon {
+  margin-left: -2px;
+  border-radius: 25px;
+  width: 52px;
+  height: 36px;
+  color: #0065fc;
+  background-color: #deebff;
+  text-align: center;
+  padding-top: 17px;
+}
+
+/* INFO */
+
+/* alignement et marge extérieur */
+.info {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+/* bordure du logo et marge extérieur et interieur du logo */
+.info_logo {
+  color: #0065fc;
+  width: 13px;
+  height: 17px;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin-right: 5px;
+  margin: 20px;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+/*couleur titre */
+.titreinfo {
+  font-size: 1em;
+}
+
+/*  SECTION HEBERGEMENT */
+
+/* titre hebergement */
+#Hebergements {
+  font-family: "ralewaybold";
+  line-height: 1px;
+  margin-left: 11px;
+  margin-bottom: 18px;
+  padding-top: 18px;
+}
+
+/* le titre hebergement */
+.titre_heb {
+  font-family: "ralewaybold";
+  font-size: 1em;
+}
+
+/* images espacé equitablement */
+#Heb_pop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* fond du bloc hebergements */
+.bloc_heb {
+  flex: 2;
+  height: 650px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* fond du bloc populaire */
+.bloc_pop {
+  flex: 1;
+  height: 650px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.prix_gras {
+  font-family: "ralewaybold";
+}
+/* BLOC HEBERGEMENTS */
+
+/* modif taille et postionnement photos */
+.imageshebergements1 {
+  image-rendering: pixelated;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements2 {
+  image-rendering: pixelated;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements3 {
+  image-rendering: pixelated;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements4 {
+  image-rendering: pixelated;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements5 {
+  text-align: center;
+  image-rendering: pixelated;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+
+.imageshebergements6 {
+  image-rendering: pixelated;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0 0;
+}
+
+/* etoile hôtel */
+.couleur_etoileB {
+  color: #0065fc;
+}
+
+.couleur_etoileG {
+  color: #f2f2f2;
+}
+/* la couleur des liens */
+.couleur_lien_N {
+  color: black;
+  line-height: 10px;
+}
+
+/* ligne haute et ligne de basse */
+.ligne1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* le cadre blanc et alignement description */
+.cadre_blanch {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  padding: 1%;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* zoom lors du survole des photos */
+.cadre_blanch:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* alignement legèrement décalé entre descriptions et photos */
+.description_h {
+  width: 90%;
+}
+
+/* afficher plus */
+#gras {
+  font-family: "ralewaybold";
+  margin-top: 5px;
+  margin-left: 11px;
+}
+
+/* BLOC POPULAIRE */
+
+/* les titres sous photo */
+.titre_pop {
+  color: black;
+  font-family: "ralewaybold";
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.titrePOP {
+  font-family: "ralewaybold";
+  line-height: 1px;
+}
+
+/* icône et titre */
+.icon_pop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 47px;
+}
+
+/* bonne alignement des trois images */
+.trois_bloc_pop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+/* marges entre les images (intérieur) */
+.marge_photo_pop12 {
+  margin-top: 22px;
+}
+
+.imagespopulaires1 {
+  image-rendering: pixelated;
+  width: 35%;
+  height: 150px;
+  border-radius: 15px 0 0 15px;
+}
+
+.imagespopulaires2 {
+  image-rendering: pixelated;
+  width: 35%;
+  height: 150px;
+  border-radius: 15px 0 0 15px;
+}
+
+.imagespopulaires3 {
+  image-rendering: pixelated;
+  width: 35%;
+  height: 150px;
+  border-radius: 15px 0 0 15px;
+}
+
+/* centrage des eléments */
+.pop_centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* mise en place de contour blanc des imagas et placement */
+.cadre_blancp {
+  height: auto;
+  background-color: white;
+  padding: 1% 0 1% 1%;
+  border-radius: 20px;
+}
+
+/* zoom lors du survole des photos */
+.cadre_blancp:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.lien_pop {
+  width: 60%;
+  padding-left: 5%;
+  color: black;
+}
+
+.P_pop {
+  margin-bottom: 30px;
+  font-size: 1em;
+}
+
+.line_P_titre {
+  line-height: 20px;
+}
+/* BLOC ACTIVITÉ */
+
+/* titre activité */
+
+.titreACT {
+  font-family: "ralewaybold";
+  margin-left: 20px;
+}
+
+/* la marge entre le haut et le bas du site */
+#Activites {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* class général div principal */
+.bloc_activites {
+  width: 100%;
+  height: 600px;
+}
+
+/* les bloc des petite photo */
+.bloc_activites2356 {
+  width: 23%;
+  height: 600px;
+}
+
+/* le placement de la div principal activité (total) */
+.flex_between_act {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* class spécifique pour chaque photo (centrage du titre et photo) */
+.display_column_act {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* placement des 2 photos dans chaque div */
+.flex_column_between_act {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* reglage bloc */
+.cadre_blanc_act {
+  width: 23%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+/* zoom lors du survole des photos 1 et 4 */
+.cadre_blanc_act:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+/* les petites images activités */
+.img2356 {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+/* zoom lors du survole des photos 2356 */
+.img2356:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+/* aggrandissement de la div titre */
+.hauteur_titre_act {
+  height: 70px;
+}
+
+/*le titre h3 sous texte photo*/
+.titre_act {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
+  width: 95%;
+  color: black;
+  font-family: "ralewaybold";
+}
+
+/* les différentes immages */
+.imagesactivites1 {
+  image-rendering: pixelated;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 526px;
+}
+
+.imagesactivites2 {
+  image-rendering: pixelated;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 250px;
+}
+
+.imagesactivites3 {
+  image-rendering: pixelated;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 150px;
+}
+
+.imagesactivites4 {
+  image-rendering: pixelated;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 526px;
+}
+
+.imagesactivites5 {
+  image-rendering: pixelated;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 200px;
+}
+
+.imagesactivites6 {
+  image-rendering: pixelated;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 200px;
+}
+
+/* FOOTER */
+
+/* le fond du footeur avec les propriétés associés */
+#footer {
+  margin-top: 100px;
+  height: 300px;
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* enlever les puces et marge */
+.puce {
+  list-style-type: none;
+  padding: 2px 0;
+}
+
+/* la partie a propos */
+#a_propos {
+  margin-left: 2%;
+  height: 150px;
+}
+
+/* la partie hébergement */
+#nos_hebergements {
+  height: 150px;
+  margin-right: 8%;
+}
+
+/* la partie assistance */
+#assistance {
+  height: 150px;
+  margin-right: 18%;
+}
+
+.couleur_footer {
+  color: black;
+}
+
+/* les titres en gras */
+.titre_footer {
+  font-family: "ralewaybold";
+}
+
+/* la marge en les différents liens */
+.marge_li_footer {
+  margin-top: 10px;
+}
+
+/* MEDIA QUERIES (TOUJOURS METTRE A LA FIN DU CSS) */
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  /* MENU  */
+  #logo_principal {
+    height: 37px;
+    margin-left: 10px;
+  }
+
+  /* positionnement du menu en mobile*/
+  nav {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .inscrire {
+    align-self: flex-end;
+    margin-top: -5px;
+  }
+
+  #menu_marge {
+    width: 100%;
+    padding: 0;
+  }
+
+  #menu_marge li {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px #f2f2f2 solid;
+  }
+
+  #menu_marge li:hover {
+    border-top: none;
+    border-bottom: 2px #0065fc solid;
+  }
+
+  #menu_marge li:active {
+    border-bottom: 2px #0065fc solid;
+  }
+
+  /* LE PREMIER TITRE RECHERCHE */
+  #titreh1 {
+    font-size: 1.3rem;
+  }
+
+  /* BARRE DE RECHERCHE */
+
+  /* mise en place du logo loupe mobile */
+  form button i,
+  form button i::before,
+  form button i::after {
+    display: block;
+    color: white;
+  }
+
+  /* masquer le mot rechercher */
+  form button span {
+    display: none;
+  }
+  /* bordure et marge du bouton */
+  .bouton {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 30px;
+  }
+
+  #destination {
+    width: 125%;
+  }
+
+  /*  LES FILTRES */
+  .filtre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: max-content;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -25px;
+  }
+
+  /* décalage du filtre famille */
+  .famille_right {
+    align-self: flex-end;
+  }
+
+  .eco_moove {
+    margin-bottom: -69px;
+  }
+
+  /* marge entre les bordures et le texte */
+  .couleur_texte {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: small;
+  }
+  /* marge entre les différents filtres */
+  .filtre_texte {
+    margin-top: 15px;
+    margin-left: 40px;
+  }
+
+  /* le titre filtre */
+  .filtreh2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    font-size: medium;
+  }
+
+  /* INFO */
+
+  /* marge entre info et bloc populaire */
+  .info {
+    margin-bottom: 10px;
+  }
+
+  .titreinfo {
+    font-size: 80%;
+  }
+  /* POPULAIRE */
+  #Heb_pop {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  /* supprimé la marge du bloc pop */
+  .bloc_pop {
+    margin-left: 0px;
+    width: 95%;
+  }
+
+  /* titre et icon reglage marge haute */
+  .icon_pop {
+    padding-top: 10px;
+  }
+
+  /* le titre populaire */
+  .titrePOP {
+    font-size: 1.1rem;
+  }
+  /* marge en bas du bloc */
+  .trois_bloc_pop {
+    margin-bottom: 12px;
+  }
+
+  /* diminuer la marge entre les images et la hauteur du cadre blanc */
+  .cadre_blancp {
+    margin-top: 10px;
+    height: 110px;
+  }
+  /*diminution des photos */
+  .imagespopulaires1 {
+    height: 110px;
+  }
+
+  .imagespopulaires2 {
+    height: 110px;
+  }
+
+  .imagespopulaires3 {
+    height: 110px;
+  }
+  /* diminution des liens dans le cadre blanc*/
+  .lien_pop {
+    font-size: small;
+  }
+
+  /* marge réduite entre les liens */
+  .P_pop {
+    margin-bottom: 25px;
+  }
+  /* espace entre les liens populaire*/
+  .line_P_titre {
+    line-height: 15px;
+  }
+
+  /* HEBERGEMENTS */
+
+  /* mise en colonne des images */
+  .ligne1 {
+    flex-direction: column;
+  }
+  /* reduction de la marge entre image (mouette) et image (mer) */
+  .ligne2 {
+    margin-top: -10px;
+  }
+
+  /* les différentes marges et largeur du bloc hébergement */
+  .bloc_heb {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+  }
+
+  /* reduction du titre hébergements */
+  #Hebergements {
+    font-size: 1.1rem;
+  }
+
+  /* largeur et marge des images hébergements */
+  .cadre_blanch {
+    width: 300px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px 5px #f2f2f2;
+    padding: 1% 1% 4% 1%;
+  }
+
+  .description_h {
+    font-size: small;
+  }
+
+  .titre_heb {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .couleur_etoileB {
+    font-size: 13px;
+  }
+
+  .couleur_etoileG {
+    font-size: 13px;
+  }
+
+  /* ACTIVITÉ */
+
+  /* le titre activité */
+  .titreACT {
+    font-size: 1.1rem;
+    margin-left: 25px;
+  }
+
+  /* marge entre section activité et populaire */
+  #Activites {
+    margin-top: 30px;
+  }
+
+  /* positionnement en colonne du bloc activité */
+  .flex_between_act {
+    flex-direction: column;
+  }
+
+  /* la largeur des images 1 et 4 */
+  .display_column_act {
+    margin-left: 15px;
+  }
+
+  .imagesactivites1 {
+    height: 150px;
+    width: 300px;
+  }
+
+  .imagesactivites2 {
+    height: 150px;
+  }
+
+  .imagesactivites3 {
+    height: 150px;
+  }
+
+  .imagesactivites4 {
+    height: 150px;
+    width: 300px;
+  }
+  .imagesactivites5 {
+    height: 150px;
+  }
+  .imagesactivites6 {
+    height: 150px;
+  }
+
+  /* les marges entre les photos (grandes) */
+  .cadre_blanc_act {
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  /* les marges entre les photos (petites) */
+  .img2356 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+
+  /* la largeur de l'image et marge */
+  .bloc_activites2356 {
+    width: 300px;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .titreh3 {
+    font-size: small;
+  }
+  /* afficher plus */
+  #gras {
+    margin-left: 30px;
+  }
+
+  /* FOOTER */
+
+  /* positionnement du footer en colonne */
+  #footer {
+    flex-direction: column;
+    margin-top: 930px;
+    height: 500px;
+    margin-bottom: auto;
+    align-items: flex-start;
+    font-size: 90%;
+  }
+
+  /* les marges extérieurs et intérieur */
+  #a_propos {
+    margin-left: 20px;
+  }
+
+  #nos_hebergements {
+    margin-left: 20px;
+    padding-top: 25px;
+  }
+
+  #assistance {
+    margin-left: 20px;
+  }
+
+  .couleur_footer {
+    font-size: 13px;
+  }
+}
+
+/* tablette ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  /* Styles */
+
+  /* BARRE DE RECHERCHE */
+
+  /* LES FILTRES */
+  .filtre {
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+
+  .filtreh2 {
+    position: absolute;
+    left: inherit;
+    margin-right: 700px;
+  }
+
+  .filtre_texte {
+    margin-left: -10px;
+    margin-top: 50px;
+  }
+
+  .famille_right {
+    align-self: flex-start;
+  }
+
+  /* inversion du bloc pop et hebergements */
+  #Heb_pop {
+    flex-direction: column-reverse;
+  }
+
+  /* BLOC POP */
+
+  /*  replacement du bloc pop */
+  .trois_bloc_pop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* modif de la taille du cadre de chaque image */
+  .cadre_blancp {
+    width: 30%;
+    height: 90px;
+  }
+
+  /* taille police des liens et titre */
+  .lien_pop {
+    font-size: 70%;
+  }
+
+  .imagespopulaires1 {
+    width: 45%;
+    height: 100px;
+    margin-left: -4px;
+  }
+
+  .imagespopulaires2 {
+    width: 45%;
+    height: 100px;
+    margin-left: -4px;
+  }
+
+  .imagespopulaires3 {
+    width: 45%;
+    height: 100px;
+    margin-left: -4px;
+  }
+
+  /* marge entre les lien */
+  .P_pop {
+    margin-bottom: 15px;
+  }
+
+  /* BLOC HEBERGEMENT */
+
+  /* mise en place du fond gris */
+  .bloc_heb {
+    background-color: #f2f2f2;
+    width: 97%;
+    margin-top: 40px;
+  }
+
+  /* replacement du bloc heb */
+  .ligne1 {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* marge entre les images */
+  .cadre_blanch {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    padding-bottom: 10px;
+  }
+
+  /* marge entre les 2 colonnes (haut et bas) */
+  .ligne2 {
+    margin-top: 10px;
+  }
+
+  /* titre hebergements */
+  #Hebergements {
+    margin-left: 27px;
+  }
+
+  .titre_heb {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .couleur_etoileB {
+    font-size: 13px;
+  }
+
+  /* BLOC ACTIVITÉ */
+  #Activites {
+    margin-left: -10px;
+    margin-top: 40px;
+  }
+
+  .bloc_activites {
+    margin-bottom: -90px;
+  }
+
+  /* marge des images 1 et 2 */
+  .display_column_act {
+    margin-bottom: 90px;
+  }
+  /* largeur des photos */
+  .bloc_activites2356 {
+    width: 60%;
+    padding-left: 20px;
+    justify-content: center;
+  }
+
+  /* position de l'image parc national des calanques en bas pour alignement */
+  .position_haute {
+    align-self: flex-start;
+    margin-right: -220px;
+  }
+
+  /* position de l'image vieux port en haut pour alignement */
+  .position_bas {
+    align-self: flex-end;
+    margin-left: 0px;
+  }
+
+  /* ordre des photos changer pour la 1er et 4ème */
+  .cadre_blanc_act {
+    order: -1;
+  }
+
+  /* repositionnement des images */
+  .flex_between_act {
+    flex-direction: row;
+  }
+
+  /* largeur des images */
+  .imagesactivites1 {
+    width: 220px;
+  }
+
+  /* largeur des images */
+  .imagesactivites4 {
+    width: 220px;
+  }
+
+  /* marge et largeur des autres images */
+  .img2356 {
+    width: 210px;
+    margin-bottom: 57px;
+    margin-top: -14px;
+  }
+
+  /* FOOTER */
+
+  /* repositionnement du footer */
+  #footer {
+    margin-top: 0px;
+    flex-direction: row;
+    height: 350px;
+    font-size: 90%;
+  }
+
+  /* modif marge */
+  #nos_hebergements {
+    padding-top: 0%;
+    margin-right: 0px;
+  }
+
+  /* modif marge */
+  #assistance {
+    margin-right: 100px;
+  }
+
+  .couleur_footer {
+    font-size: 13px;
+  }
+}
+
+/* tablette ----------- */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  /* les filtres */
+  .filtreh2 {
+    margin-left: -150px;
+    margin-top: -6px;
+  }
+  .filtre {
+    margin-left: -28px;
+    margin-bottom: 20px;
+  }
+
+  /* bloc populaire */
+  .bloc_pop {
+    margin-left: 0px;
+    width: 95%;
+  }
+
+  .cadre_blancp {
+    height: 120px;
+  }
+
+  .imagespopulaires1 {
+    height: 130px;
+  }
+
+  .imagespopulaires2 {
+    height: 130px;
+  }
+
+  .imagespopulaires3 {
+    height: 130px;
+  }
+  .titre_pop {
+    font-size: 15px;
+  }
+
+  .P_pop {
+    font-size: 15px;
+  }
+
+  .couleur_etoileB {
+    font-size: 15px;
+  }
+
+  /* bloc hebergement */
+  .bloc_heb {
+    width: 96%;
+    margin-left: 18px;
+  }
+
+  .titre_heb {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .couleur_etoileG {
+    font-size: 16px;
+  }
+
+  /* bloc activite */
+  #Activites {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 90px;
+  }
+
+  .imagesactivites1 {
+    height: 170px;
+    width: 303px;
+  }
+
+  .imagesactivites4 {
+    height: 170px;
+    width: 303px;
+  }
+
+  .imagesactivites2 {
+    height: 170px;
+    width: 303px;
+  }
+
+  .imagesactivites3 {
+    height: 170px;
+  }
+
+  .imagesactivites5 {
+    height: 170px;
+  }
+
+  .imagesactivites6 {
+    height: 170px;
+  }
+
+  .bloc_activites2356 {
+    width: 25%;
+  }
+
+  .position_haute {
+    margin-left: 0px;
+    width: 30%;
+  }
+
+  .position_bas {
+    margin-left: -168px;
+    margin-bottom: 70px;
+    width: 30%;
+  }
+
+  .img2356 {
+    width: 120%;
+    margin-left: -50px;
+  }
+
+  .titreh3 {
+    font-size: 15px;
+  }
+
+  #gras {
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+}
