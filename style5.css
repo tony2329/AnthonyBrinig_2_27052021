@@ -27,14 +27,14 @@ a {
 
 /* MENU */
 
-/* mise en place du menu en haut a droite */
-
+/* placement du logo en haut a gauche */
 #logo_principal {
   position: absolute;
   height: 50px;
   margin: 25px 20px;
 }
 
+/* positionnement du menu en haut a droite */
 nav,
 #menu_marge {
   width: auto;
@@ -44,6 +44,7 @@ nav,
   margin-top: 0px;
 }
 
+/* marge et enlèvement des puces sur la barre de menu */
 #menu_marge li {
   padding: 40px 24px 10px 24px;
   list-style-type: none;
@@ -51,6 +52,7 @@ nav,
   color: black;
 }
 
+/* mise en place d'un curseur pointeur sur les liens + pas de surlignement */
 a {
   color: black;
   text-decoration: none;
@@ -58,10 +60,12 @@ a {
   font-size: 18px;
 }
 
+/* quand le lien a été visité changer couleur */
 a:visited {
   color: inherit;
 }
 
+/* liens au survol */
 #menu_marge li:hover {
   border-top: 2px #0065fc solid;
   color: #0065fc;
@@ -72,6 +76,7 @@ a:visited {
   color: #0065fc;
 }
 
+/* marge et gras du lien s'inscrire */
 nav .inscrire {
   color: #0065fc;
   font-size: 18px;
