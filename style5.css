@@ -815,7 +815,7 @@ form button i::after {
   /* supprimé la marge du bloc pop */
   .bloc_pop {
     margin-left: 0px;
-    width: 95%;
+    width: 100%;
   }
 
   /* titre et icon reglage marge haute */
@@ -830,12 +830,14 @@ form button i::after {
   /* marge en bas du bloc */
   .trois_bloc_pop {
     margin-bottom: 12px;
+    margin-left: 15px;
   }
 
   /* diminuer la marge entre les images et la hauteur du cadre blanc */
   .cadre_blancp {
     margin-top: 10px;
     height: 110px;
+    width: 95%;
   }
   /*diminution des photos */
   .imagespopulaires1 {
@@ -879,9 +881,7 @@ form button i::after {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 10px;
-    width: 95%;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 100%;
     background-color: white;
   }
 
@@ -892,7 +892,7 @@ form button i::after {
 
   /* largeur et marge des images hébergements */
   .cadre_blanch {
-    width: 300px;
+    width: 90%;
     margin-bottom: 15px;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
     padding: 1% 1% 4% 1%;
@@ -943,7 +943,7 @@ form button i::after {
 
   .imagesactivites1 {
     height: 150px;
-    width: 300px;
+    width: 100%;
   }
 
   .imagesactivites2 {
@@ -956,7 +956,7 @@ form button i::after {
 
   .imagesactivites4 {
     height: 150px;
-    width: 300px;
+    width: 100%;
   }
   .imagesactivites5 {
     height: 150px;
@@ -970,7 +970,7 @@ form button i::after {
     margin-right: 15px;
     margin-bottom: 5px;
     margin-top: 20px;
-    width: 300px;
+    width: 90%;
   }
 
   /* les marges entre les photos (petites) */
@@ -981,7 +981,7 @@ form button i::after {
 
   /* la largeur de l'image et marge */
   .bloc_activites2356 {
-    width: 300px;
+    width: 90%;
     align-items: center;
     margin-right: 10px;
   }
@@ -1026,7 +1026,7 @@ form button i::after {
 }
 
 /* tablette ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
   /* Styles */
 
   /* BARRE DE RECHERCHE */
@@ -1109,7 +1109,7 @@ form button i::after {
   /* mise en place du fond gris */
   .bloc_heb {
     background-color: #f2f2f2;
-    width: 97%;
+    width: 100%;
     margin-top: 40px;
   }
 
@@ -1123,7 +1123,7 @@ form button i::after {
   .cadre_blanch {
     margin-left: 20px;
     margin-right: 20px;
-    width: 300px;
+    width: 100%;
     padding-bottom: 10px;
   }
 
@@ -1150,63 +1150,55 @@ form button i::after {
   }
 
   /* BLOC ACTIVITÉ */
+
   #Activites {
-    margin-left: -10px;
-    margin-top: 40px;
+    margin-bottom: -20px;
   }
 
-  .bloc_activites {
-    margin-bottom: -90px;
-  }
-
-  /* marge des images 1 et 2 */
-  .display_column_act {
-    margin-bottom: 90px;
-  }
-  /* largeur des photos */
-  .bloc_activites2356 {
-    width: 60%;
-    padding-left: 20px;
-    justify-content: center;
-  }
-
-  /* position de l'image parc national des calanques en bas pour alignement */
-  .position_haute {
-    align-self: flex-start;
-    margin-right: -220px;
-  }
-
-  /* position de l'image vieux port en haut pour alignement */
-  .position_bas {
-    align-self: flex-end;
-    margin-left: 0px;
-  }
-
-  /* ordre des photos changer pour la 1er et 4ème */
+  /* cadre image 1 et 4 */
   .cadre_blanc_act {
-    order: -1;
+    width: 50%;
   }
 
+  .flex_column_between_act {
+    justify-content: space-evenly;
+  }
   /* repositionnement des images */
   .flex_between_act {
     flex-direction: row;
+    margin-top: -50px;
   }
 
-  /* largeur des images */
+  /* cadre img 2356 */
+  .bloc_activites2356 {
+    width: 50%;
+  }
+
+  /* reglage marge */
+  .top_img2 {
+    margin-top: 61px;
+  }
+
+  .top_img3 {
+    margin-bottom: 48px;
+  }
+
+  .top_img5 {
+    margin-top: 61px;
+  }
+
+  .top_img6 {
+    margin-bottom: 48px;
+  }
+
+  /* hauteur image */
+
   .imagesactivites1 {
-    width: 220px;
+    height: 404px;
   }
 
-  /* largeur des images */
   .imagesactivites4 {
-    width: 220px;
-  }
-
-  /* marge et largeur des autres images */
-  .img2356 {
-    width: 210px;
-    margin-bottom: 57px;
-    margin-top: -14px;
+    height: 404px;
   }
 
   /* FOOTER */
@@ -1250,7 +1242,7 @@ form button i::after {
   /* bloc populaire */
   .bloc_pop {
     margin-left: 0px;
-    width: 95%;
+    width: 100%;
   }
 
   .cadre_blancp {
@@ -1282,7 +1274,7 @@ form button i::after {
 
   /* bloc hebergement */
   .bloc_heb {
-    width: 96%;
+    width: 100%;
     margin-left: 18px;
   }
 
@@ -1298,66 +1290,43 @@ form button i::after {
     font-size: 16px;
   }
 
-  /* bloc activite */
-  #Activites {
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 90px;
-  }
-
-  .imagesactivites1 {
-    height: 170px;
-    width: 303px;
-  }
-
-  .imagesactivites4 {
-    height: 170px;
-    width: 303px;
-  }
-
-  .imagesactivites2 {
-    height: 170px;
-    width: 303px;
-  }
-
-  .imagesactivites3 {
-    height: 170px;
-  }
-
-  .imagesactivites5 {
-    height: 170px;
-  }
-
-  .imagesactivites6 {
-    height: 170px;
-  }
-
-  .bloc_activites2356 {
-    width: 25%;
-  }
-
-  .position_haute {
-    margin-left: 0px;
-    width: 30%;
-  }
-
-  .position_bas {
-    margin-left: -168px;
-    margin-bottom: 70px;
-    width: 30%;
-  }
-
-  .img2356 {
-    width: 120%;
-    margin-left: -50px;
-  }
-
-  .titreh3 {
-    font-size: 15px;
-  }
-
   #gras {
     margin-top: 20px;
     margin-left: 25px;
+  }
+
+  /* BLOC ACTIVITÉ */
+
+  .bloc_activites2356 {
+    width: 23%;
+    margin-bottom: 15px;
+  }
+  /* image 1 et 4 */
+  .cadre_blanc_act {
+    width: 23%;
+  }
+
+  .imagesactivites2 {
+    height: 150px;
+  }
+
+  .imagesactivites3 {
+    height: 150px;
+  }
+
+  .imagesactivites5 {
+    height: 150px;
+  }
+
+  .imagesactivites6 {
+    height: 150px;
+  }
+
+  .top_img6 {
+    margin-top: 20px;
+  }
+
+  .top_img3 {
+    margin-top: 20px;
   }
 }
