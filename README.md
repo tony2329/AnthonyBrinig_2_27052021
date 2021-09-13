@@ -13,3 +13,5 @@ les hébergements peuvent être filtrés par thématique, par leur budget ou leu
 <li> Les différentes cartes d'hébergement ou d'activité seront cliquable en intégralité. Pour le moment les liens seront vides.
 <li> Les filtres ne seront pas fonctionnels pour cette version, par ailleurs il faut qu'il changent d'apparence au survol. Effet au survol au choix.
 <li> Pour le menu les liens "Hébergements" et "Activités" sont des ancres qui mènent aux sections de la page.
+
+PS: changement de dossier distant en cour de projet car problème avec le terminal.
