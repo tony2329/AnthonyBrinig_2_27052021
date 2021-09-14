@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!--balise qui gère l'encodage des caractères à destination des navigateur-->
     <meta charset="UTF-8" />
+    <!--choix du mode de navigateur-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--gère la responsivité-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--chemin des regles css-->
     <link rel="stylesheet" href="style5.css" />
+    <!-- balise kit pour icone -->
     <script
       src="https://kit.fontawesome.com/a45e315257.js"
       crossorigin="anonymous"
@@ -16,6 +19,7 @@
     <!-- Icone de l'onglet -->
     <link rel="shortcut icon" href="reservia@3x.png" />
   </head>
+
   <!--corp de la page-->
   <body>
     <div id="bloc_page">
@@ -30,6 +34,8 @@
             srcset="Reservia.svg"
           />
         </a>
+
+        <!-- MENU DE NAVIGATION-->
         <nav>
           <ul id="menu_marge">
             <li>
@@ -41,14 +47,16 @@
           </ul>
           <a class="inscrire" href="#">S'inscrire</a>
         </nav>
+
         <!--le titre h1 de la page-->
         <h1 id="titreh1">
           Trouver votre hébergement pour des vacances de rêve
         </h1>
         <!--le petit texte en dessous du titre-->
         <h2 id="presentation">En plein centre ville ou en pleine nature</h2>
+
         <form>
-          <!--barre de recherche-->
+          <!--BARRE DE RECHERCHER-->
           <div id="recherche">
             <div id="logodestination">
               <label for="destination"
@@ -73,10 +81,11 @@
           </div>
         </form>
 
-        <!--barre de filtre-->
+        <!--BARRE DE FILTRE-->
         <div class="filtre">
           <!--titre filtreh2-->
           <h2 class="filtreh2">Filtres</h2>
+
           <!-- tous les logos du filtre-->
           <div class="filtre_texte eco_moove">
             <i class="fas fa-money-bill-wave logo_icon"></i>
@@ -116,12 +125,13 @@
         </div>
       </header>
 
-      <!--premier bloc hébergements-->
+      <!--1er BLOC HEBERGEMENT -->
       <section id="Heb_pop">
         <div class="bloc_heb">
           <!--le titre du bloc hébergements-->
           <h2 id="Hebergements">Hébergements à Marseille</h2>
-          <!--les photos hébergements-->
+
+          <!-- IMG 1-->
           <div class="ligne1">
             <div class="cadre_blanch">
               <a href="#">
@@ -136,6 +146,7 @@
                 <a class="couleur_lien_N" href="#">
                   <h3 class="titre_heb">Auberge la Cannebière</h3>
                   <p>Nuit à partir de <span class="prix_gras">25€</span></p>
+                  <!-- ETOILES -->
                   <div>
                     <i class="fas fa-star couleur_etoileB"></i>
                     <i class="fas fa-star couleur_etoileB"></i>
@@ -147,7 +158,7 @@
               </div>
             </div>
 
-            <!--les photos hébergements-->
+            <!--IMG 2-->
             <div class="cadre_blanch">
               <a href="#">
                 <img
@@ -161,6 +172,7 @@
                 <a class="couleur_lien_N" href="#">
                   <h3 class="titre_heb">Hôtel du port</h3>
                   <p>Nuit à partir de 52<span class="prix_gras">€</span></p>
+                  <!--ETOILES-->
                   <div>
                     <i class="fas fa-star couleur_etoileB"></i>
                     <i class="fas fa-star couleur_etoileB"></i>
@@ -172,7 +184,7 @@
               </div>
             </div>
 
-            <!--les photos hébergements-->
+            <!--IMG 3-->
             <div class="cadre_blanch">
               <a href="#">
                 <img
@@ -181,11 +193,12 @@
                   alt="hôtel les mouettes"
                 />
               </a>
-              <!--titre 3 et p sous image-->
+              <!--titre 3 et 4 sous image-->
               <div class="description_h">
                 <a class="couleur_lien_N" href="#">
                   <h3 class="titre_heb">Hôtel Les mouettes</h3>
                   <p>Nuit à partir de 76<span class="prix_gras">€</span></p>
+                  <!--ETOILES-->
                   <div>
                     <i class="fas fa-star couleur_etoileB"></i>
                     <i class="fas fa-star couleur_etoileB"></i>
@@ -198,7 +211,7 @@
             </div>
           </div>
 
-          <!--les photos hébergements-->
+          <!--IGM 4-->
           <div class="ligne1 ligne2">
             <div class="cadre_blanch">
               <a href="#">
@@ -208,11 +221,12 @@
                   alt="hotel de la mer"
                 />
               </a>
-              <!--titre 3 et p sous image-->
+              <!--titre 3 et 4 sous image-->
               <div class="description_h">
                 <a class="couleur_lien_N" href="#">
                   <h3 class="titre_heb">Hôtel de la mer</h3>
                   <p>Nuit à partir de 46<span class="prix_gras">€</span></p>
+                  <!--ETOILES-->
                   <div>
                     <i class="fas fa-star couleur_etoileB"></i>
                     <i class="fas fa-star couleur_etoileB"></i>
@@ -224,7 +238,7 @@
               </div>
             </div>
 
-            <!--les photos hébergements-->
+            <!--IMG 5-->
             <div class="cadre_blanch">
               <a href="#">
                 <img
@@ -233,11 +247,12 @@
                   alt="Auberge Le Panier"
                 />
               </a>
-              <!--titre 3 et p sous image-->
+              <!--titre 3 et 4 sous image-->
               <div class="description_h">
                 <a class="couleur_lien_N" href="#">
                   <h3 class="titre_heb">Auberge Le Panier</h3>
                   <p>Nuit à partir de <span class="prix_gras">23€</span></p>
+                  <!--ETOILES-->
                   <div>
                     <i class="fas fa-star couleur_etoileB"></i>
                     <i class="fas fa-star couleur_etoileB"></i>
@@ -249,7 +264,7 @@
               </div>
             </div>
 
-            <!--les photos hébergements-->
+            <!--IMG 6-->
             <div class="cadre_blanch">
               <a href="#">
                 <img
@@ -258,11 +273,12 @@
                   alt="Hôtel chez Amina"
                 />
               </a>
-              <!--titre 3 et p sous image-->
+              <!--titre 3 et 4 sous image-->
               <div class="description_h">
                 <a class="couleur_lien_N" href="#">
                   <h3 class="titre_heb">Hôtel chez Amina</h3>
                   <p>Nuit à partir de 96<span class="prix_gras">€</span></p>
+                  <!--ETOILE-->
                   <div>
                     <i class="fas fa-star couleur_etoileB"></i>
                     <i class="fas fa-star couleur_etoileB"></i>
@@ -285,7 +301,7 @@
             <h2 class="titrePOP">Les plus populaires</h2>
             <i class="fas fa-chart-line fa-2x"></i>
           </div>
-          <!--les photos populaires-->
+          <!--IMG 1 POP-->
           <div class="trois_bloc_pop">
             <div class="pop_centre cadre_blancp marge_photo_pop12">
               <img
@@ -305,6 +321,7 @@
                     Nuit à partir de 128<span class="prix_gras">€</span>
                   </p>
                 </div>
+                <!--ETOILE-->
                 <div>
                   <i class="fas fa-star couleur_etoileB"></i>
                   <i class="fas fa-star couleur_etoileB"></i>
@@ -315,7 +332,7 @@
               </a>
             </div>
 
-            <!--les photos populaires-->
+            <!--IMG 2-->
             <div class="pop_centre cadre_blancp marge_photo_pop12">
               <img
                 class="imagespopulaires2"
@@ -333,6 +350,7 @@
                     Nuit à partir de 71<span class="prix_gras">€</span>
                   </p>
                 </div>
+                <!--ETOILE-->
                 <div>
                   <i class="fas fa-star couleur_etoileB"></i>
                   <i class="fas fa-star couleur_etoileB"></i>
@@ -343,7 +361,7 @@
               </a>
             </div>
 
-            <!--les photos populaires-->
+            <!--IMG 3-->
             <div class="pop_centre cadre_blancp marge_photo_pop12">
               <img
                 class="imagespopulaires3"
@@ -362,6 +380,7 @@
                     Nuit à partir de 68<span class="prix_gras">€</span>
                   </p>
                 </div>
+                <!-- ETOILE -->
                 <div>
                   <i class="fas fa-star couleur_etoileB"></i>
                   <i class="fas fa-star couleur_etoileB"></i>
@@ -375,57 +394,60 @@
         </div>
       </section>
 
-      <!--troisième partie du site activites-->
+      <!--BLOC ACTIVITES-->
+
       <section id="Activites">
         <!--le titre 2 du bloc Activités-->
         <h2 class="titreACT">Activités à Marseille</h2>
         <div class="bloc_activites flex_between_act">
-          <!--les photos Activités-->
-          
-            <div class="cadre_blanc_act display_column_act position_haute">
+          <!--IMG 1-->
+
+          <div class="cadre_blanc_act display_column_act position_haute">
+            <a href="#"
+              ><img
+                class="imagesactivites1"
+                src="imagesactivitesM/vieuxport.jpg"
+                alt="Vieux Port"
+            /></a>
+            <!--lien cliquable-->
+            <a class="titre_act hauteur_titre_act" href="#">
+              <!--titre 3 sous image-->
+              <h3 class="titreh3">Vieux Port</h3>
+            </a>
+          </div>
+
+          <!--IMG 2-->
+          <div class="bloc_activites2356 flex_column_between_act">
+            <div class="img2356 display_column_act top_img2">
               <a href="#"
                 ><img
-                  class="imagesactivites1"
-                  src="imagesactivitesM/vieuxport.jpg"
-                  alt="Vieux Port"
+                  class="imagesactivites2"
+                  src="imagesactivitesM/fortpomegues.jpg"
+                  alt="Fort de Pomègues"
               /></a>
               <!--lien cliquable-->
               <a class="titre_act hauteur_titre_act" href="#">
                 <!--titre 3 sous image-->
-                <h3 class="titreh3">Vieux Port</h3>
+                <h3 class="titreh3">Fort de Pormègues</h3>
               </a>
             </div>
 
-            <div class="bloc_activites2356 flex_column_between_act">
-              <div class="img2356 display_column_act top_img2">
-                <a href="#"
-                  ><img
-                    class="imagesactivites2"
-                    src="imagesactivitesM/fortpomegues.jpg"
-                    alt="Fort de Pomègues"
-                /></a>
-                <!--lien cliquable-->
-                <a class="titre_act hauteur_titre_act" href="#">
-                  <!--titre 3 sous image-->
-                  <h3 class="titreh3">Fort de Pormègues</h3>
-                </a>
-              </div>
-
-              <div class="img2356 display_column_act top_img3">
-                <a href="#"
-                  ><img
-                    class="imagesactivites3"
-                    src="imagesactivites/ilesfrioul.jpg"
-                    alt="îles Frioul"
-                /></a>
-                <!--lien cliquable-->
-                <a class="titre_act hauteur_titre_act" href="#">
-                  <!--titre 3 sous image-->
-                  <h3 class="titreh3">îles du Frioul</h3>
-                </a>
-              </div>
+            <!--IMG 3-->
+            <div class="img2356 display_column_act top_img3">
+              <a href="#"
+                ><img
+                  class="imagesactivites3"
+                  src="imagesactivites/ilesfrioul.jpg"
+                  alt="îles Frioul"
+              /></a>
+              <!--lien cliquable-->
+              <a class="titre_act hauteur_titre_act" href="#">
+                <!--titre 3 sous image-->
+                <h3 class="titreh3">îles du Frioul</h3>
+              </a>
             </div>
-
+          </div>
+          <!--IMG 4-->
           <div class="cadre_blanc_act display_column_act position_bas">
             <a href="#"
               ><img
@@ -440,6 +462,7 @@
             </a>
           </div>
 
+          <!--IMG 5-->
           <div class="bloc_activites2356 flex_column_between_act">
             <div class="img2356 display_column_act top_img5">
               <a href="#"
@@ -455,6 +478,7 @@
               </a>
             </div>
 
+            <!--IMG 6-->
             <div class="img2356 display_column_act top_img6">
               <a href="#"
                 ><img
